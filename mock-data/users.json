@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "user_admin",
+      "username": "admin.minsante",
+      "firstName": "Administrateur",
+      "lastName": "MINSANTE",
+      "email": "admin@minsante.cm",
+      "organisationUnits": ["CM"],
+      "userRoles": [
+        {
+          "id": "role_admin",
+          "name": "Administrateur Système",
+          "authorities": ["ALL"]
+        }
+      ]
+    },
+    {
+      "id": "user_regional",
+      "username": "coord.centre",
+      "firstName": "Coordonnateur",
+      "lastName": "Région Centre",
+      "email": "coord.centre@minsante.cm",
+      "organisationUnits": ["CM_CE"],
+      "userRoles": [
+        {
+          "id": "role_regional",
+          "name": "Coordonnateur Régional",
+          "authorities": ["VIEW_REGIONAL_DATA", "GENERATE_REPORTS"]
+        }
+      ]
+    }
+  ]
+}

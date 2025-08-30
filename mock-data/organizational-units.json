@@ -1,0 +1,99 @@
+{
+  "organisationUnits": [
+    {
+      "id": "CM",
+      "name": "Cameroun",
+      "level": 1,
+      "path": "/CM",
+      "parent": null,
+      "children": [
+        {
+          "id": "CM_CE",
+          "name": "Région du Centre",
+          "level": 2,
+          "path": "/CM/CM_CE",
+          "parent": "CM",
+          "children": [
+            {
+              "id": "CM_CE_YDE",
+              "name": "District de Santé de Yaoundé",
+              "level": 3,
+              "path": "/CM/CM_CE/CM_CE_YDE",
+              "parent": "CM_CE",
+              "children": [
+                {
+                  "id": "CM_CE_YDE_HCY",
+                  "name": "Hôpital Central de Yaoundé",
+                  "level": 4,
+                  "path": "/CM/CM_CE/CM_CE_YDE/CM_CE_YDE_HCY",
+                  "parent": "CM_CE_YDE",
+                  "facilityType": "Hospital",
+                  "coordinates": {
+                    "latitude": 3.8480,
+                    "longitude": 11.5021
+                  }
+                },
+                {
+                  "id": "CM_CE_YDE_CSI_MVG",
+                  "name": "CSI Mvog-Mbi",
+                  "level": 4,
+                  "path": "/CM/CM_CE/CM_CE_YDE/CM_CE_YDE_CSI_MVG",
+                  "parent": "CM_CE_YDE",
+                  "facilityType": "Health Center",
+                  "coordinates": {
+                    "latitude": 3.8667,
+                    "longitude": 11.5167
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CM_LT",
+          "name": "Région du Littoral",
+          "level": 2,
+          "path": "/CM/CM_LT",
+          "parent": "CM",
+          "children": [
+            {
+              "id": "CM_LT_DLA",
+              "name": "District de Santé de Douala",
+              "level": 3,
+              "path": "/CM/CM_LT/CM_LT_DLA",
+              "parent": "CM_LT",
+              "children": [
+                {
+                  "id": "CM_LT_DLA_HGD",
+                  "name": "Hôpital Général de Douala",
+                  "level": 4,
+                  "path": "/CM/CM_LT/CM_LT_DLA/CM_LT_DLA_HGD",
+                  "parent": "CM_LT_DLA",
+                  "facilityType": "Hospital",
+                  "coordinates": {
+                    "latitude": 4.0511,
+                    "longitude": 9.7679
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "levels": [
+      {"level": 1, "name": "National"},
+      {"level": 2, "name": "Région"},
+      {"level": 3, "name": "District de Santé"},
+      {"level": 4, "name": "Formation Sanitaire"}
+    ],
+    "facilityTypes": [
+      {"id": "Hospital", "name": "Hôpital"},
+      {"id": "Health Center", "name": "Centre de Santé Intégré"},
+      {"id": "Clinic", "name": "Clinique"},
+      {"id": "Dispensary", "name": "Dispensaire"}
+    ]
+  }
+}

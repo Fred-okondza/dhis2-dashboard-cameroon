@@ -1,0 +1,32 @@
+{
+  "analyticsData": {
+    "headers": ["dx", "ou", "pe", "value"],
+    "metaData": {
+      "dimensions": {
+        "dx": ["DE_MAL_CASES", "DE_VAC_BCG", "DE_MAT_DEATHS", "DE_COVID_CASES"],
+        "ou": ["CM_CE_YDE", "CM_LT_DLA", "CM_CE_YDE_HCY", "CM_CE_YDE_CSI_MVG"],
+        "pe": ["202401", "202402", "202403", "202404", "202405", "202406"]
+      }
+    },
+    "rows": [
+      ["DE_MAL_CASES", "CM_CE_YDE", "202401", 1245],
+      ["DE_MAL_CASES", "CM_CE_YDE", "202402", 1189],
+      ["DE_MAL_CASES", "CM_CE_YDE", "202403", 1356],
+      ["DE_MAL_CASES", "CM_CE_YDE", "202404", 1423],
+      ["DE_MAL_CASES", "CM_CE_YDE", "202405", 1598],
+      ["DE_MAL_CASES", "CM_CE_YDE", "202406", 1672],
+      ["DE_VAC_BCG", "CM_CE_YDE", "202401", 456],
+      ["DE_VAC_BCG", "CM_CE_YDE", "202402", 489],
+      ["DE_VAC_BCG", "CM_CE_YDE", "202403", 512],
+      ["DE_VAC_BCG", "CM_CE_YDE", "202404", 534],
+      ["DE_VAC_BCG", "CM_CE_YDE", "202405", 567],
+      ["DE_VAC_BCG", "CM_CE_YDE", "202406", 591],
+      ["DE_MAT_DEATHS", "CM_CE_YDE", "202401", 3],
+      ["DE_MAT_DEATHS", "CM_CE_YDE", "202402", 2],
+      ["DE_MAT_DEATHS", "CM_CE_YDE", "202403", 4],
+      ["DE_COVID_CASES", "CM_CE_YDE", "202401", 45],
+      ["DE_COVID_CASES", "CM_CE_YDE", "202402", 32],
+      ["DE_COVID_CASES", "CM_CE_YDE", "202403", 28]
+    ]
+  }
+}

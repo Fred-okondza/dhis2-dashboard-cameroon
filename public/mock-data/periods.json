@@ -1,0 +1,15 @@
+{
+  "periods": [
+    {"id": "2022", "name": "2022", "periodType": "Yearly", "startDate": "2022-01-01", "endDate": "2022-12-31"},
+    {"id": "2023", "name": "2023", "periodType": "Yearly", "startDate": "2023-01-01", "endDate": "2023-12-31"},
+    {"id": "2024", "name": "2024", "periodType": "Yearly", "startDate": "2024-01-01", "endDate": "2024-12-31"},
+    {"id": "2024Q1", "name": "Q1 2024", "periodType": "Quarterly", "startDate": "2024-01-01", "endDate": "2024-03-31"},
+    {"id": "2024Q2", "name": "Q2 2024", "periodType": "Quarterly", "startDate": "2024-04-01", "endDate": "2024-06-30"},
+    {"id": "202401", "name": "Janvier 2024", "periodType": "Monthly", "startDate": "2024-01-01", "endDate": "2024-01-31"},
+    {"id": "202402", "name": "Février 2024", "periodType": "Monthly", "startDate": "2024-02-01", "endDate": "2024-02-29"},
+    {"id": "202403", "name": "Mars 2024", "periodType": "Monthly", "startDate": "2024-03-01", "endDate": "2024-03-31"},
+    {"id": "202404", "name": "Avril 2024", "periodType": "Monthly", "startDate": "2024-04-01", "endDate": "2024-04-30"},
+    {"id": "202405", "name": "Mai 2024", "periodType": "Monthly", "startDate": "2024-05-01", "endDate": "2024-05-31"},
+    {"id": "202406", "name": "Juin 2024", "periodType": "Monthly", "startDate": "2024-06-01", "endDate": "2024-06-30"}
+  ]
+}

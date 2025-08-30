@@ -1,0 +1,99 @@
+{
+  "dataElements": [
+    {
+      "id": "DE_MAL_CASES",
+      "name": "Cas de paludisme confirmés",
+      "shortName": "Paludisme confirmé",
+      "code": "MAL_CONFIRMED",
+      "valueType": "INTEGER",
+      "aggregationType": "SUM",
+      "categoryCombo": "default"
+    },
+    {
+      "id": "DE_VAC_BCG",
+      "name": "Vaccinations BCG administrées",
+      "shortName": "Vaccination BCG",
+      "code": "VAC_BCG",
+      "valueType": "INTEGER",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DE_MAT_DEATHS",
+      "name": "Décès maternels",
+      "shortName": "Décès maternels",
+      "code": "MAT_DEATHS",
+      "valueType": "INTEGER",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DE_COVID_CASES",
+      "name": "Cas de COVID-19 confirmés",
+      "shortName": "COVID-19 confirmé",
+      "code": "COVID_CONFIRMED",
+      "valueType": "INTEGER",
+      "aggregationType": "SUM"
+    }
+  ],
+  "indicators": [
+    {
+      "id": "IND_MAL_INCIDENCE",
+      "name": "Incidence du paludisme pour 1000 habitants",
+      "shortName": "Incidence paludisme",
+      "indicatorType": "Rate",
+      "numerator": "DE_MAL_CASES",
+      "denominator": "Population",
+      "factor": 1000,
+      "description": "Nombre de cas de paludisme confirmés pour 1000 habitants"
+    },
+    {
+      "id": "IND_VAC_COVERAGE",
+      "name": "Couverture vaccinale BCG",
+      "shortName": "Couverture BCG",
+      "indicatorType": "Percentage",
+      "numerator": "DE_VAC_BCG",
+      "denominator": "Population cible < 1 an",
+      "factor": 100,
+      "description": "Pourcentage d'enfants < 1 an vaccinés avec BCG"
+    },
+    {
+      "id": "IND_MAT_MORTALITY",
+      "name": "Ratio de mortalité maternelle",
+      "shortName": "Mortalité maternelle",
+      "indicatorType": "Rate",
+      "numerator": "DE_MAT_DEATHS",
+      "denominator": "Naissances vivantes",
+      "factor": 100000,
+      "description": "Nombre de décès maternels pour 100 000 naissances vivantes"
+    }
+  ],
+  "programs": [
+    {
+      "id": "PROG_MALARIA",
+      "name": "Programme National de Lutte contre le Paludisme",
+      "shortName": "PNLP",
+      "indicators": ["IND_MAL_INCIDENCE"],
+      "dataElements": ["DE_MAL_CASES"]
+    },
+    {
+      "id": "PROG_VACCINATION",
+      "name": "Programme Élargi de Vaccination",
+      "shortName": "PEV",
+      "indicators": ["IND_VAC_COVERAGE"],
+      "dataElements": ["DE_VAC_BCG"]
+    },
+    {
+      "id": "PROG_MATERNAL",
+      "name": "Programme de Santé Maternelle",
+      "shortName": "SMI",
+      "indicators": ["IND_MAT_MORTALITY"],
+      "dataElements": ["DE_MAT_DEATHS"]
+    },
+    {
+      "id": "PROG_COVID19",
+      "name": "Riposte COVID-19",
+      "shortName": "COVID-19",
+      "indicators": [],
+      "dataElements": ["DE_COVID_CASES"]
+    }
+  ]
+}
